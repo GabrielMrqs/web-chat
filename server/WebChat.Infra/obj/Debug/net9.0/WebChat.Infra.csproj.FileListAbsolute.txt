@@ -1,0 +1,15 @@
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\bin\Debug\net9.0\WebChat.Infra.deps.json
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\bin\Debug\net9.0\WebChat.Infra.dll
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\bin\Debug\net9.0\WebChat.Infra.pdb
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\bin\Debug\net9.0\WebChat.Application.dll
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\bin\Debug\net9.0\WebChat.Application.pdb
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\obj\Debug\net9.0\WebChat.Infra.csproj.AssemblyReference.cache
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\obj\Debug\net9.0\WebChat.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\obj\Debug\net9.0\WebChat.Infra.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\obj\Debug\net9.0\WebChat.Infra.AssemblyInfo.cs
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\obj\Debug\net9.0\WebChat.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\obj\Debug\net9.0\WebChat..B0434C1C.Up2Date
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\obj\Debug\net9.0\WebChat.Infra.dll
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\obj\Debug\net9.0\refint\WebChat.Infra.dll
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\obj\Debug\net9.0\WebChat.Infra.pdb
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat.Infra\obj\Debug\net9.0\ref\WebChat.Infra.dll

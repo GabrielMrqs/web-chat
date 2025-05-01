@@ -1,0 +1,14 @@
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\bin\Debug\net9.0\WebChat.exe
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\bin\Debug\net9.0\WebChat.deps.json
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\bin\Debug\net9.0\WebChat.runtimeconfig.json
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\bin\Debug\net9.0\WebChat.dll
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\bin\Debug\net9.0\WebChat.pdb
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\obj\Debug\net9.0\WebChat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\obj\Debug\net9.0\WebChat.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\obj\Debug\net9.0\WebChat.AssemblyInfo.cs
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\obj\Debug\net9.0\WebChat.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\obj\Debug\net9.0\WebChat.dll
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\obj\Debug\net9.0\refint\WebChat.dll
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\obj\Debug\net9.0\WebChat.pdb
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\obj\Debug\net9.0\WebChat.genruntimeconfig.cache
+C:\Users\Gabriel\Documents\WebChat\WebChat\WebChat\obj\Debug\net9.0\ref\WebChat.dll

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WebChat": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
