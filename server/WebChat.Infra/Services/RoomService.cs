@@ -54,7 +54,7 @@ namespace WebChat.Infra.Services
 
         public async Task<IEnumerable<Room>> GetRoomsAsync()
         {
-            var selectPs = _session.Prepare($@"
+            var selectPs = await _session.PrepareAsync($@"
                     SELECT room_id, name, created_at
                     FROM {_scyllaDbSettings.RoomsTable};
                 ");

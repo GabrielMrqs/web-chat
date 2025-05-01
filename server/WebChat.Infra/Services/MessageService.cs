@@ -60,7 +60,7 @@ namespace WebChat.Infra.Services
 
         public async Task<IEnumerable<Message>> GetChatHistoryAsync(Guid roomId, int limit = 50)
         {
-            var selectPs = _session.Prepare($@"
+            var selectPs = await _session.PrepareAsync($@"
                     SELECT room_id, message_id, sender_id, content, sent_at
                     FROM {_scyllaDbSettings.MessagesTable}
                     WHERE room_id = ?
