@@ -67,9 +67,9 @@ namespace WebChat.Infra.Services
                     LIMIT ?;
                 ");
 
-            var rs = await _session.ExecuteAsync(
-                selectPs.Bind(roomId, limit)
-            ).ConfigureAwait(false);
+            var bound = selectPs.Bind(roomId, limit);
+
+            var rs = await _session.ExecuteAsync(bound).ConfigureAwait(false);
 
             var messages = rs.Select(row => new Message
             {
@@ -83,4 +83,4 @@ namespace WebChat.Infra.Services
             return messages;
         }
     }
-} 
+}

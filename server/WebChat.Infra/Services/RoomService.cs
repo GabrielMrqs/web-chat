@@ -47,9 +47,7 @@ namespace WebChat.Infra.Services
                 VALUES (uuid(), ?, toTimestamp(now()))
                 ");
 
-            var bound = insertPs.Bind(
-                dto.Name
-            );
+            var bound = insertPs.Bind(dto.Name);
 
             await _session.ExecuteAsync(bound).ConfigureAwait(false);
         }
@@ -61,7 +59,9 @@ namespace WebChat.Infra.Services
                     FROM {_scyllaDbSettings.RoomsTable};
                 ");
 
-            var rs = await _session.ExecuteAsync(selectPs.Bind()).ConfigureAwait(false);
+            var bound = selectPs.Bind();
+
+            var rs = await _session.ExecuteAsync(bound).ConfigureAwait(false);
 
             var rooms = rs.Select(row => new Room
             {
@@ -73,4 +73,4 @@ namespace WebChat.Infra.Services
             return rooms;
         }
     }
-} 
+}
