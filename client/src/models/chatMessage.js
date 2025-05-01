@@ -1,9 +1,9 @@
 class ChatMessage {
-    constructor(roomId, messageId, senderId, content) {
+    constructor(roomId, content) {
         this.roomId = roomId;
-        this.messageId = messageId;
-        this.senderId = senderId;
-        this.sentAt = new Date();
+        // this.messageId = messageId;
+        // this.senderId = senderId;
+        // this.sentAt = new Date();
         this.content = content;
     }
 

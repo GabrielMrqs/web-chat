@@ -29,7 +29,7 @@ class SignalRService {
     async sendMessage(roomId, content) {
         try {
             if (this.connection?.state === signalR.HubConnectionState.Connected) {
-                const chatMessage = new ChatMessage(roomId, null, null, content);
+                const chatMessage = new ChatMessage(roomId, content);
                 await this.connection.invoke('SendMessage', chatMessage);
                 return true;
             }
