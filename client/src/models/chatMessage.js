@@ -1,10 +1,8 @@
-import { v4 as uuidv4 } from 'uuid';
-
 class ChatMessage {
     constructor(roomId, messageId, senderId, content) {
-        this.roomId = roomId || uuidv4();
-        this.messageId = messageId || uuidv4();
-        this.senderId = senderId || uuidv4();
+        this.roomId = roomId;
+        this.messageId = messageId;
+        this.senderId = senderId;
         this.sentAt = new Date();
         this.content = content;
     }
