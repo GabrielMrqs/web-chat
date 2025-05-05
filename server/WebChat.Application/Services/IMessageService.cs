@@ -7,4 +7,4 @@ namespace WebChat.Application.Services
         Task SaveMessageAsync(Message message);
         Task<IEnumerable<Message>> GetChatHistoryAsync(Guid roomId, int limit = 50);
     }
-} 
+}

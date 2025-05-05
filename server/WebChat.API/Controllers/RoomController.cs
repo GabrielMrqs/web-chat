@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebChat.Application.DTOs;
 using WebChat.Application.Models;
@@ -16,6 +17,7 @@ namespace WebChat.API.Controllers
             _roomService = roomService;
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Room>>> Get()
         {
@@ -30,8 +32,9 @@ namespace WebChat.API.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] CreateRoomDto dto)
+        public async Task<ActionResult> Post([FromBody] RegisterRoomDTO dto)
         {
             try
             {

@@ -1,0 +1,33 @@
+<div class="chat-container">
+  <div class="chat-header">
+    <h2>Chat</h2>
+  </div>
+
+  <div class="chat-messages">
+    <div *ngFor="let msg of messages$ | async" class="message"
+      [ngClass]="{ 'message-sent': msg.senderId === 'current-user' }">
+      <div class="message-content">
+        <div class="message-header">
+          <span class="sender">{{ msg.senderId }}</span>
+          <span class="time">{{ msg.sentAt | date:'shortTime' }}</span>
+        </div>
+        <span class="content">{{ msg.content }}</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="chat-input">
+    <div class="message-input-container">
+      <input type="text" [(ngModel)]="message" placeholder="Type your message..." (keyup.enter)="sendMessage()"
+        class="message-input">
+      <button (click)="sendMessage()" class="send-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>

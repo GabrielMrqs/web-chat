@@ -39,7 +39,7 @@ namespace WebChat.Infra.Services
             ");
         }
 
-        public async Task CreateRoomAsync(CreateRoomDto dto)
+        public async Task CreateRoomAsync(RegisterRoomDTO dto)
         {
             var insertPs = await _session.PrepareAsync($@"
                 INSERT INTO {_scyllaDbSettings.RoomsTable} 

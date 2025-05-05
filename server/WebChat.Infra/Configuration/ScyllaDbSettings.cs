@@ -8,5 +8,6 @@ namespace WebChat.Infra.Configuration
         public string Keyspace { get; set; }
         public string MessagesTable { get; set; }
         public string RoomsTable { get; set; }
+        public string UsersTable { get; set; }
     }
 }

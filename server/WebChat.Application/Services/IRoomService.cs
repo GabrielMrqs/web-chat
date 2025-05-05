@@ -5,7 +5,7 @@ namespace WebChat.Application.Services
 {
     public interface IRoomService
     {
-        Task CreateRoomAsync(CreateRoomDto dto);
+        Task CreateRoomAsync(RegisterRoomDTO dto);
         Task<IEnumerable<Room>> GetRoomsAsync();
     }
-} 
+}

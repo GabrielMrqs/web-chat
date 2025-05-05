@@ -1,8 +1,7 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WebChat.Application.DTOs;
 using WebChat.Application.Models;
 using WebChat.Application.Services;
-using WebChat.Infra.Services;
 
 namespace WebChat.API.Controllers
 {
@@ -17,6 +16,7 @@ namespace WebChat.API.Controllers
             _messageService = messageService;
         }
 
+        [Authorize]
         [HttpGet("{roomId}")]
         public async Task<ActionResult<IEnumerable<Message>>> GetChatHistoryAsync(Guid roomId, [FromQuery] int limit = 50)
         {

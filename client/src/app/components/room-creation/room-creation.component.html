@@ -1,0 +1,54 @@
+<div class="room-creation-container">
+  <div class="room-creation-card">
+    <h2>Chat Rooms</h2>
+    
+    <div class="create-room-section">
+      <div class="form-group">
+        <input
+          type="text"
+          [(ngModel)]="roomName"
+          placeholder="Enter room name"
+          class="room-input"
+          (keyup.enter)="createRoom()"
+        >
+        <div *ngIf="error" class="error-message">
+          {{ error }}
+        </div>
+      </div>
+
+      <button (click)="createRoom()" class="create-button">
+        Create Room
+      </button>
+    </div>
+
+    <div class="rooms-table-container">
+      <div *ngIf="isLoading" class="loading">
+        Loading rooms...
+      </div>
+      
+      <table *ngIf="!isLoading" class="rooms-table">
+        <thead>
+          <tr>
+            <th>Room Name</th>
+            <th>Created At</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let room of rooms">
+            <td>{{ room.name }}</td>
+            <td>{{ formatDate(room.createdAt) }}</td>
+            <td>
+              <button (click)="joinRoom(room.roomId)" class="join-button">
+                Join
+              </button>
+            </td>
+          </tr>
+          <tr *ngIf="rooms.length === 0">
+            <td colspan="3" class="no-rooms">No rooms available. Create one!</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div> 
